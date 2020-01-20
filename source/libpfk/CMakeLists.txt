@@ -25,7 +25,7 @@ target_link_libraries(
 set_target_properties(
 	ss_pfk PROPERTIES
 	VERSION ${RELVER}
-	SOVERSION ${RELVER} )
+	SOVERSION ${MAJORVER} )
 
 if( APPLE )
 

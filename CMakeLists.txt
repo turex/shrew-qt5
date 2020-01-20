@@ -26,8 +26,11 @@ add_definitions( -DUNIX )
 include( CheckCSourceCompiles )
 include( CheckLibraryExists )
 
-set(
-	RELVER "2.3.0" )
+set( MAJORVER "2" )
+set( MINORVER "3" )
+set( PATCHVER "0" )
+
+set( RELVER "${MAJORVER}.${MINORVER}.${PATCHVER}" )
 
 subdirs(
 	source/iked

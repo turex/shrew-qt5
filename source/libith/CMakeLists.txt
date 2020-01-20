@@ -27,7 +27,7 @@ endif( PATH_LIB_RT )
 set_target_properties(
 	ss_ith PROPERTIES
 	VERSION ${RELVER}
-	SOVERSION ${RELVER} )
+	SOVERSION ${MAJORVER} )
 
 if( APPLE )
 

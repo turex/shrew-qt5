@@ -32,7 +32,7 @@ set_target_properties(
 	ss_ip
 	PROPERTIES
 	VERSION ${RELVER}
-	SOVERSION ${RELVER} )
+	SOVERSION ${MAJORVER} )
 
 if( APPLE )
 
