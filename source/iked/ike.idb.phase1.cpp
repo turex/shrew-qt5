@@ -676,7 +676,9 @@ bool _IDB_PH1::setup_dhgrp( IKE_PROPOSAL * proposal )
 	}
 
 	xl.size( dh_size );
-	long result = BN_bn2bin( dh->pub_key, xl.buff() );
+	const BIGNUM *pub_key, *priv_key;
+	DH_get0_key( dh, &pub_key, &priv_key );
+	long result = BN_bn2bin( pub_key, xl.buff() );
 
 	//
 	// fixup public buffer alignment
