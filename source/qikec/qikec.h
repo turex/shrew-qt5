@@ -168,6 +168,7 @@ typedef class _qikecRoot : public QMainWindow, public Ui::ikecRoot
 
 		connect( pushButtonConnect, SIGNAL( clicked() ), this, SLOT( siteConnect() ) );
 		connect( pushButtonExit, SIGNAL( clicked() ), this, SLOT( siteDisconnect() ) );
+		connect( lineEditPassword, &QLineEdit::returnPressed, pushButtonConnect, &QPushButton::click);
 
 		lineEditUsername->setFocus();
 	}
