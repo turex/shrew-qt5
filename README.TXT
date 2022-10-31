@@ -369,3 +369,14 @@ s:auth-client-cert:<client public cert filename>
 b:auth-client-cert-data:<client public cert file contents>
 s:auth-client-key:<client private key filename>
 b:auth-client-key-data:<client private key file contents>
+
+
+
+#HOW TO INSTALL
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DQTGUI=YES -DETCDIR=/etc -DNATT=YES 
+make && make install
+
+#HOW TO START
+sudo iked
+qikea
