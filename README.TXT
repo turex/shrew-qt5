@@ -370,13 +370,18 @@ b:auth-client-cert-data:<client public cert file contents>
 s:auth-client-key:<client private key filename>
 b:auth-client-key-data:<client private key file contents>
 
+#how to make
 
+need (arch or manjaro):
+
+pacman -S base-devel
 
 #HOW TO INSTALL
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr -DQTGUI=YES -DETCDIR=/etc -DNATT=YES 
-make && make install
+make 
+make install (root user or sudouser)
 
 #HOW TO START
 sudo iked
-qikea
+qikea (graphical)
